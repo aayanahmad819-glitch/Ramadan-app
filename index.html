@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramadan Special 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="welcomeScreen" class="screen active">
+  <div class="center">
+    <div class="stars">🌙⭐✨</div>
+    <h1>HAPPY RAMADAN 2026</h1>
+    <button onclick="showLogin()">START</button>
+  </div>
+</div>
+
+<div id="loginScreen" class="screen">
+  <div class="center login-box">
+    <h2>Ramadan Special</h2>
+    <label>Gmail</label>
+    <input type="email" id="email" placeholder="Enter Gmail">
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">LOGIN</button>
+    <p id="loginMessage" class="message"></p>
+    <p class="powered">Powered by Aayan</p>
+  </div>
+</div>
+
+<div id="ramadanScreen" class="screen">
+  <div class="center ramadan-box">
+    <h2>Ramadan Timing</h2>
+    <button onclick="showTiming('sehri')">SEHRI TIME</button>
+    <button onclick="showTiming('iftar')">IFTAR TIME</button>
+    <p class="dua">May this Ramadan bring peace, blessings, and endless joy to your heart.</p>
+  </div>
+</div>
+
+<div id="timingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <pre id="timingText"></pre>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
